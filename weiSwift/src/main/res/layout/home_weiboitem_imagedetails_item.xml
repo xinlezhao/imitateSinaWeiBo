@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ImageViewItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.photoviewlib.PhotoView
+        android:id="@+id/PhotoViewID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/frescoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        fresco:actualImageScaleType="fitCenter" />
+
+
+    <com.wenming.weiswift.ui.login.fragment.home.imagedetaillist.DonutProgress xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/donut_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        custom:donut_finished_color="#ffffff"
+        custom:donut_max="100"
+        custom:donut_text_color="#ffffff"
+        custom:donut_unfinished_color="#000000" />
+
+</RelativeLayout>
